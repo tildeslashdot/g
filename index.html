@@ -9,19 +9,19 @@
 	<link rel="stylesheet" href="./assets/style.css">
 
 	<!-- - Embeds - -->
-	<!-- Open Graph -->
+	<!-- Open Graph / Facebook -->
 	<meta property="og:title" content="Web Dash"/>
 	<meta property="og:description" content="A mod of geometrydash.com!"/>
-	<meta property="og:image" content="https://web-dashers.github.io/assets/logo.png"/>
-	<meta property="og:url" content="https://web-dashers.github.io/"/>
+	<meta property="og:image" content="https://github.io"/>
+	<meta property="og:url" content="https://github.io"/>
     
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image"/>
 	<meta name="twitter:title" content="Web Dash"/>
 	<meta name="twitter:description" content="A mod of geometrydash.com!"/>
-	<meta name="twitter:image" content="https://web-dashers.github.io/assets/logo.png"/>
+	<meta name="twitter:image" content="https://github.io"/>
 	
-	<!-- Libraries and stuff -->
+	<!-- Libraries and assets -->
 	<script src="./assets/scripts/allObjects.js"></script>
 	<script src="./assets/scripts/allLevels.js"></script>
 	<script src="./assets/scripts/phaser.min.js"></script>
@@ -31,10 +31,14 @@
 	<script type="module" crossorigin src="./assets/scripts/index-game.js"></script>
 
 	<script>
-		new ResizeObserver(() => {
-			window.dispatchEvent(new Event('resize'));
-		}).observe(document.documentElement);
+		// Handle screen scaling and resizing automatically
+		window.addEventListener('DOMContentLoaded', () => {
+			new ResizeObserver(() => {
+				window.dispatchEvent(new Event('resize'));
+			}).observe(document.documentElement);
+		});
     
+		// Prevent the standard right-click context menu inside the game canvas
 		document.oncontextmenu = (event) => {
 			event.preventDefault();
 		};
@@ -42,7 +46,7 @@
 </head>
 
 <body>
-	<!-- Phaser game canvas will inject here automatically -->
+	<!-- Phaser game hooks canvas elements here automatically upon load -->
 </body>
 
 </html>
