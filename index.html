@@ -2,47 +2,47 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-<title>Geometry Dash: The End Update</title>
-<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-<link rel="stylesheet" href="assets/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<title>Geometry Dash: The End Update</title>
+	<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+	<link rel="stylesheet" href="./assets/style.css">
 
-<!-- - Embeds - -->
-<!-- Open Graph -->
-<meta property="og:title" content="Web Dash"/>
-<meta property="og:description" content="A mod of geometrydash.com!"/>
-<meta property="og:image" content="https://web-dashers.github.io/assets/logo.png"/>
-<meta property="og:url" content="https://web-dashers.github.io/"/>
+	<!-- - Embeds - -->
+	<!-- Open Graph -->
+	<meta property="og:title" content="Web Dash"/>
+	<meta property="og:description" content="A mod of geometrydash.com!"/>
+	<meta property="og:image" content="https://web-dashers.github.io/assets/logo.png"/>
+	<meta property="og:url" content="https://web-dashers.github.io/"/>
+    
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:title" content="Web Dash"/>
+	<meta name="twitter:description" content="A mod of geometrydash.com!"/>
+	<meta name="twitter:image" content="https://web-dashers.github.io/assets/logo.png"/>
+	
+	<!-- Libraries and stuff -->
+	<script src="./assets/scripts/allObjects.js"></script>
+	<script src="./assets/scripts/allLevels.js"></script>
+	<script src="./assets/scripts/phaser.min.js"></script>
+	<script src="./assets/scripts/pako.min.js"></script>
+	
+	<!-- ACTUAL GAME CODE -->
+	<script type="module" crossorigin src="./assets/scripts/index-game.js"></script>
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Web Dash"/>
-<meta name="twitter:description" content="A mod of geometrydash.com!"/>
-<meta name="twitter:image" content="https://web-dashers.github.io/assets/logo.png"/>
-
-<!-- Libraries and stuff -->
-<script src="assets/scripts/allObjects.js" type="ae789a83e460a33bd6b5da88-text/javascript"></script>
-<script src="assets/scripts/allLevels.js" type="ae789a83e460a33bd6b5da88-text/javascript"></script>
-<script src="assets/scripts/phaser.min.js" type="ae789a83e460a33bd6b5da88-text/javascript"></script>
-<script src="assets/scripts/pako.min.js" type="ae789a83e460a33bd6b5da88-text/javascript"></script>
-<!-- - -->
-<!-- ACTUAL GAME CODE -->
-<script type="ae789a83e460a33bd6b5da88-module" crossorigin src="assets/scripts/index-game.js"></script>
-<!-- - -->
-<script type="ae789a83e460a33bd6b5da88-text/javascript">
-new ResizeObserver(() => {
-window.dispatchEvent(new Event('resize'));
-}).observe(document.documentElement);
-
-document.oncontextmenu = (event) => {
-event.preventDefault();
-};
-</script>
+	<script>
+		new ResizeObserver(() => {
+			window.dispatchEvent(new Event('resize'));
+		}).observe(document.documentElement);
+    
+		document.oncontextmenu = (event) => {
+			event.preventDefault();
+		};
+	</script>
 </head>
 
 <body>
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ae789a83e460a33bd6b5da88-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"28c7cb7185af4990bda79d5ff73811c5","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+	<!-- Phaser game canvas will inject here automatically -->
 </body>
 
 </html>
